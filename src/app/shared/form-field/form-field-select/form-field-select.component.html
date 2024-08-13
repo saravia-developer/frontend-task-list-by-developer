@@ -1,0 +1,7 @@
+<label [for]="identification">{{ label }}</label>
+<select [name]="name" [id]="identification" [formControl]="formControl" (change)="onSelectChange($event)">
+  <option value="" style="display: none">Selecciona una categoria</option>
+  <option *ngFor="let option of options" [value]="option.category_id">
+    {{ option.name_category }}
+  </option>
+</select>

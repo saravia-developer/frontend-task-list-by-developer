@@ -1,1 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
+@use './assets/styles/index.scss';
+
+
+/*
+  Import's of Google Fonts
+*/
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+/*
+  Import Angular Material
+*/
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+
+
+body {
+  font-family: "DM Sans", sans-serif;
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; box-sizing: border-box; }

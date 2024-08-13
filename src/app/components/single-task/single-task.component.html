@@ -1,0 +1,19 @@
+  <strong class="name-task">
+    {{ task.name_task }}
+  </strong>
+
+  <p class="description">
+    {{ task.description }}
+  </p>
+
+  <span class="time-estimated">
+    {{ task.estimated_time }}
+  </span>
+
+  <span class="category">
+    {{ task.name_category }}
+  </span>
+
+  <button mat-stroked-button color="primary" (click)="taskCompleted(task.task_id)">Completado</button>
+
+  <button mat-stroked-button color="warn" (click)="taskDetails(task)">Detalles</button>

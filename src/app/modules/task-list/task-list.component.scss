@@ -1,0 +1,48 @@
+:host {
+  display: grid;
+  position: relative;
+  max-width: 1600px;
+  margin: auto;
+
+  h1 {
+    text-align: center;
+    font-weight: 600;
+  }
+
+  > div {
+    width: 100%;
+    margin: auto;
+
+    .btn-task-create {
+      display: grid;
+      width: clamp(280px, 80%, 700px);
+      margin: auto;
+
+      button {
+        justify-self: end;
+
+        width: 120px;
+        height: 35px;
+
+        margin: 7px 0;
+
+        position: relative;
+      }
+    }
+
+    .container-tasks {
+      display: grid;
+      justify-content: center;
+      align-items: center;
+
+      width: clamp(280px, 80%, 700px);
+
+      margin: auto;
+    }
+
+    .form-task {
+      padding: 20px;
+      border-radius: 10px;
+    }
+  }
+}

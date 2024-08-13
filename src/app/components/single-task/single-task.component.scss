@@ -1,0 +1,44 @@
+:host {
+
+  display: grid;
+  grid-template-columns: repeat(6, minmax(100px, 18%));
+  grid-template-rows: 45px;
+  justify-content: center;
+  gap: 20px;
+
+  border: 2px outset  white;
+
+  margin: 5px 0;
+  padding: 0 10px 0 5px;
+
+  .identificator,
+  .time-estimated,
+  .category {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .description, .name-task {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-wrap: nowrap;
+    padding: 10% 0;
+  }
+
+  .description {
+    justify-content: start;
+
+    height: 100%;
+    margin: 0
+  }
+
+  button {
+    transition: all .3s ease;
+  }
+
+  button:hover {
+    background-color: #8cfca4;
+    color: aliceblue;
+  }
+}
