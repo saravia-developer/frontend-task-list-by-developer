@@ -2,7 +2,6 @@ import { Component } from '@angular/core';
 import { TaskServicesService } from 'src/app/services/task-services.service';
 import { MatDialog } from '@angular/material/dialog'
 import { CreateTaskComponent } from 'src/app/components/create-task/create-task.component';
-import { CategoryService } from 'src/app/services/category.service';
 
 @Component({
   selector: 'app-task-list',
