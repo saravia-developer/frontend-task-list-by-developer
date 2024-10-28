@@ -1,0 +1,47 @@
+<form action="dialog" [formGroup]="taskCreationForm" (ngSubmit)="viewData()">
+  <app-form-field-input
+    label="Título"
+    placeholder="Ingresa el título"
+    name="title"
+    identification="title"
+    formControlName="title"
+  ></app-form-field-input>
+
+  <!-- <app-form-field-input
+    label="Description"
+    placeholder="Ingresa la descripción"
+    name="description"
+    identification="description"
+    formControlName="description"
+  ></app-form-field-input> -->
+
+  <app-form-field-textarea
+    label="Description"
+    placeholder="Ingresa la descripción"
+    name="description"
+    identification="description"
+    formControlName="description"
+  ></app-form-field-textarea>
+
+  <app-form-field-input
+    label="Tiempo a culminar la tarea"
+    placeholder="Ingresa el tiempo estimado"
+    type="number"
+    name="estimatedTime"
+    identification="time"
+    formControlName="timeEstimated"
+  ></app-form-field-input>
+
+  <app-form-field-select
+    label="Categoria"
+    identification="category"
+    name="category"
+    [options]="categoryOptions"
+    formControlName="category"
+  ></app-form-field-select>
+
+  <mat-dialog-actions>
+    <button mat-stroked-button color="primary">Crear</button>
+    <button type="button" mat-stroked-button color="warn" (click)="closeDialog()">Cerrar</button>
+  </mat-dialog-actions>
+</form>

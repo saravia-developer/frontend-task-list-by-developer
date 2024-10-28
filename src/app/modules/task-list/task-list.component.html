@@ -1,0 +1,28 @@
+<h1>Task List by Developer</h1>
+
+<div>
+  <div class="btn-task-create">
+    <button mat-raised-button color="primary" (click)="taskCreate()">Crear Tarea</button>
+  </div>
+
+  <!-- <div class="">
+    <app-categories></app-categories>
+  </div> -->
+
+  <div class="container-tasks" *ngIf="statusTaskCall === 'success'">
+    <app-head-list-tasks></app-head-list-tasks>
+    <app-single-task *ngFor="let task of tasks" [task]="task"></app-single-task>
+  </div>
+
+  <ng-template #loading *ngIf="statusTaskCall === 'pending'">
+    <p>
+      Cargando
+    </p>
+  </ng-template>
+
+  <ng-template #errorBlock *ngIf="statusTaskCall === 'error'">
+    <p>
+      Por el momento no hay tareas por realizar, tienes que agregar más tareas
+    </p>
+  </ng-template>
+</div>

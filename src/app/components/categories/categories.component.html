@@ -1,0 +1,10 @@
+<!-- <mat-form-field> -->
+  <mat-label>Categories</mat-label>
+  <select matNativeControl required>
+    <option
+      *ngFor="let category of categories"
+      [value]="category.category_id"
+      >{{ category.name_category }}</option
+    >
+  </select>
+<!-- </mat-form-field> -->

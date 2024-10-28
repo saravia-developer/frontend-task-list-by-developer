@@ -1,0 +1,20 @@
+:host {
+  margin: 7px 0;
+
+  label, textarea {
+    display: block;
+  }
+
+  label {
+    font-weight: 500;
+  }
+
+  textarea {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    height: 95px;
+    padding: 0 7px;
+  }
+}
+

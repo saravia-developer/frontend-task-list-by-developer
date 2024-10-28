@@ -1,0 +1,21 @@
+:host {
+  background: #baf5c7;
+
+  border: 3px outset #8cfca4;
+  border-radius: 5px;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  .head {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 30px;
+
+    span {
+      width: 85px;
+      text-align: center;
+    }
+  }
+}

@@ -1,0 +1,19 @@
+:host {
+  margin: 7px 0;
+
+  label, select {
+    display: block;
+  }
+
+  label {
+    font-weight: 500;
+  }
+
+  select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    height: 35px;
+    padding: 0 7px;
+  }
+}
