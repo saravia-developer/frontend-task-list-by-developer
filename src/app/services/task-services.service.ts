@@ -7,7 +7,7 @@ import { ICreateTask, IUpdateTask } from '../interface/task.interface';
 })
 export class TaskServicesService {
 
-  private readonly url = 'http://localhost:3000'
+  private readonly url = 'http://localhost:3001'
   private readonly table = 'task'
 
   constructor(

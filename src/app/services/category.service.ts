@@ -7,7 +7,7 @@ import { ICreateCategory } from '../interface/category.interface';
 })
 export class CategoryService {
 
-  private readonly url = 'http://localhost:3000'
+  private readonly url = 'http://localhost:3001'
   private readonly table = 'category'
 
   constructor(
